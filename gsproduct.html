@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="slowbuy icon" href="favicon.ico" />
+    <title>凑单品</title>
+    <link rel="stylesheet" type="text/css" href="lib/mui/css/mui.min.css">
+    <link rel="stylesheet" type="text/css" href="lib/fontAwesome/css/font-awesome.min.css">
+    <link rel="stylesheet/less" href="less/setSKU.less">
+    <script src="lib/less/less.js"></script>
+</head>
+
+<body>
+    <!-- 头部 -->
+    <header id="header">
+        <a href="">
+            <i class="fa fa-angle-left"></i>
+        </a>
+        <h4>凑单品</h4>
+        <a href="javascript(0)">
+            <img src="./images/header_app.png" alt="">
+        </a>
+    </header>
+    <!-- 下拉菜单 -->
+    <!-- <a name="top">top</a> -->
+    <nav id="nav">
+        <!-- <div class="mui-input-row">
+
+            <label class="mui-navigate-right" href="#">知晓途径</label>
+
+            <select name="select" id="select_k1">
+
+                <option value="0"></option>
+
+                
+
+                <option value="2">搜房网</option>
+
+                <option value="3">工地围墙</option>
+
+                <option value="4">三环户外</option>
+
+                <option value="5">苹果日报</option>
+
+                <option value="6">安桌市场</option>
+
+                <option value="7">直邮DM</option>
+
+            </select>
+
+        </div> -->
+        <!-- 此处下拉不适合用栅格 -->
+        <div class="left " id="top">
+            <div class="shopping fa fa-caret-down">
+                <span value="5">京东</span>
+            </div>
+            <div class="place fa fa-caret-down">
+                <span value="5">华北</span>
+            </div>
+            <div class="allPrice fa fa-caret-down">
+                <span value="5">全部价格</span>
+            </div>
+        </div>
+        <div class="right">
+            <a href="javascript:(0)">
+                <i class="fa fa-search"></i>
+            </a>
+        </div>
+        <!-- 菜单列表 -->
+
+
+    </nav>
+    <a href="#top" class="top fa fa-rocket"></a>
+    <div class="menu " >
+        <ul class="menu-ul" data-place-id="0" data-shopping-id="0">
+           
+        </ul>
+    </div>
+    <!-- 主体部分 -->
+    
+    <main id="main">
+        <div id="refreshContainer" class="mui-content mui-scroll-wrapper">
+            <div class="mui-scroll">
+                <div class="box" >
+                    <div class="out">
+                        <a href="javascript:(0)">
+                            <div class="list">
+                                <img src="./images/ic_bcj.png" alt="">
+                                <p>手机开放给hop呢合适的佛号</p>
+                                <p>
+                                    <span>￥</span>
+                                    <strong>0.0</strong>
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="out">
+                        <a href="javascript:(0)">
+                            <div class="list">
+                                <img src="./images/ic_bcj.png" alt="">
+                                <p>手机开放给hop呢合适的佛号适的佛号</p>
+                                <p>
+                                    <span>￥</span>
+                                    <strong>0.0</strong>
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="out">
+                        <a href="javascript:(0)">
+                            <div class="list">
+                                <img src="./images/ic_bcj.png" alt="">
+                                <p>手机开放给hop呢合适的佛号</p>
+                                <p>
+                                    <span>￥</span>
+                                    <strong>0.0</strong>
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="out">
+                        <a href="javascript:(0)">
+                            <div class="list">
+                                <img src="./images/ic_bcj.png" alt="">
+                                <p>手机开放给hop呢合适的佛号</p>
+                                <p>
+                                    <span>￥</span>
+                                    <strong>0.0</strong>
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+
+
+    </main>
+    <!-- 页脚 -->
+   
+    <!-- 第一次li没有勾 -->
+    <script id="singleTpl" type="text/html">
+        {{each result value index}}
+        <li class="{{value.select?'fa fa-check':''}}" data-name="{{value.shopName}}" data-noID="{{value._id}}" data-id="{{value.shopId}}">{{value.shopName}}</li>
+        {{/each}}
+
+    </script>
+    <!-- 地区模板 -->
+    <script id="placeTpl" type="text/html">
+        {{each result value index}}
+        <li class="{{value.select?'fa fa-check':''}}" data-name="{{value.str}}" data-id="{{value.areaId}}">{{value.str}}</li>
+        {{/each}}
+
+    </script>
+    <!-- 商品列表 -->
+    <script id="productTpl" type="text/html">
+        {{each result value index}}
+        <div class="out" >
+            <a href="javascript:(0)" >
+                <div class="list">
+                    <img src="{{@value.productImg}}" alt="">
+                    <p>{{value.productName}}</p>
+                    <p>
+                        <strong>{{value.productPrice}}</strong>
+                    </p>
+                </div>
+            </a>
+        </div>
+        {{/each}}
+
+    </script>
+    <!-- 引入js -->
+    <script src="lib/mui/js/mui.js"></script>
+    <script src="lib/zepto/zepto.min.js"></script>
+    <script src="lib/artTemplate/template-web.js"></script>
+    <script src="js/setSKU.js"></script>
+</body>
+
+</html>

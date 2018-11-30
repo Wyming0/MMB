@@ -1,0 +1,86 @@
+@import 'base.less';
+
+body {
+  padding: 0.6rem 0;
+}
+header {
+  .head-box{
+    padding: 0;
+    display: flex;
+    height: 0.47rem;
+    a {
+      position: absolute;
+      &.back {
+        font-size: 0.25rem;
+        left: 0.1rem;
+      }
+      &.download {
+        right: 0.1rem;
+      }
+    }
+    h4 {
+      flex:1;
+      text-align: center;
+    }
+  }
+}
+#main {
+  height: auto;
+  overflow: auto;
+  position: static;
+  .history {
+    padding: 0.1rem;
+    .textarea {
+        -webkit-user-select: auto;
+        word-break: break-all;
+        color: #c9c9c9;
+        width: 100%;
+        box-sizing: border-box;
+        padding: 6px 0px;
+        font-size: 14px;
+        line-height: 18px;
+        outline: none;
+        border-bottom: 1px solid #e3e3e3;
+        -webkit-appearance: none;
+        border-radius: 0px;
+        overflow-y: visible;
+        resize: none;
+        margin-bottom: 0.1rem;
+    }
+    .buttonbox {
+      text-align: center;
+      button {
+        border-radius: 0.08rem;
+      }
+    }
+    .tips {
+        margin-top: 0.08rem;
+        .title {
+          color: #000;
+        }
+        p.mes {
+          margin: 0;
+        }
+    }
+  }
+}
+
+  // 面包屑导航
+  .breadcrumb {
+    height:0.36rem;
+    width: 100%;
+    line-height: 0.36rem;
+    padding-left: 0.1rem;
+    background: -webkit-gradient(linear,0 0,0 100%,from(#ffffff),to(#ebebeb));
+    font-size: 0.14rem;
+    // border-bottom: 1px solid #ccc;
+    margin-bottom: 0.1rem;
+  }
+
+
+footer {
+  // position: static;
+  .toolBar {
+      margin:0 0  0.1rem;
+    }
+}

@@ -1,0 +1,187 @@
+/* 去掉ul默认padding */
+@main-color: #f85000;
+@border-color: #ccc;
+* {
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    list-style: none;
+}
+
+
+/* 设置a默认颜色 */
+
+a {
+    color: #666;
+}
+html {
+  font-size: 100px;
+}
+
+/* 给html 和 body固定高度 */
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+  background-color: #fff;
+  font-size: 0.12rem;
+  padding: 0.87rem 0 1.42rem;
+}
+/* 给中间主体部分高度也是100% */
+
+#main {
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+
+// 公共部分
+header {
+  width: 100%;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 10;
+  background-color: #fff;
+  .head-box {
+    padding: 8px 10px;
+    border-bottom: 1px solid #ccc;
+    display: flex;
+    align-items:center;
+      a.logo {
+        margin-right: 10px;
+        width: 0.84rem;
+        height: 0.25rem;
+        background: url("../images/mlogo.png") center center/cover;
+
+      }
+      form {
+        position: relative;
+        flex:1;
+        margin-right: 0.1rem;
+         font-size: 0.14rem;
+        input {
+          width: 100%;
+          height: 0.30rem;
+          font-size: 0.14rem;
+          border-radius: 0.2rem;
+          padding-left: 0.22rem;
+          text-align: left;
+          margin-bottom:0;
+          background-color: #f9f9f9;
+        }
+        i {
+          position: absolute;
+          color: #cacaca;
+          top: 0.08rem;
+          left: 0.05rem;
+        }
+      }
+      a.download {
+          font-size: 0.11rem;
+          height:0.2rem;
+          line-height: 0.1rem;
+          color: @main-color;
+          border: 0.01rem solid @main-color;
+          padding: 0.04rem 0.1rem;
+          border-radius: 0.2rem;
+      }
+  }
+  .head-tab {
+    height: 0.4rem;
+    line-height: 0.4rem;
+    border-bottom: 1px solid #ccc;
+    box-shadow: 1px 1px 1px #ccc;
+      ul {
+        white-space:nowrap;
+        overflow-x: auto;
+        li {
+          padding: 0 12px;
+          display: inline-block;
+          a {
+            display: block;
+            width: 100%;
+            height: 100%;
+            font-size: 15px;
+            color: #333;
+            font-weight:700;
+            &.active{
+              color:@main-color;
+         }
+        }
+      }
+        &::-webkit-scrollbar {
+          height: 0;
+          background: transparent;
+        }
+      }
+  }
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #efefef;
+  .brandSort {
+    a {
+      display: flex;
+      justify-content:space-between;
+      align-items:center;
+      padding: 0 0.1rem;
+      background-color: @main-color;
+      img {
+        width: 0.2rem;
+        height: 0.2rem;
+      }
+      h4 {
+        line-height: 0.4rem;
+        color: #fff;
+        margin: 0;
+      }
+    }
+  }
+  .toolBar {
+    height: 0.34rem;
+    line-height: 0.34rem;
+   border-top: 0.01rem solid #ccc;
+   border-bottom: 0.01rem solid #ccc;
+    margin: 0.1rem 0;
+    display: flex;
+    >a {
+      flex:1;
+      font-size: 0.14rem;
+      text-align: center;
+      &.top {
+        img {
+          height: 0.15rem;
+          width: 0.15rem;
+        }
+      }
+      &+a {
+        border-left: 0.01rem solid #ccc;
+      }
+    }
+  }
+  .siteInfo {
+    display: flex;
+    align-items:center;
+    flex-direction:column;
+    padding-bottom: 0.06rem;
+    .download {
+      margin-right: 0.05rem;
+      color: @main-color;
+    }
+    p {
+      margin:0;
+      color: #333;
+    }
+  }
+}

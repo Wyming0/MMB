@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        <link rel="slowbuy icon" href="favicon.ico" />
+        <title>慢慢买-优惠券</title>
+        <link rel="stylesheet" type="text/css" href="lib/mui/css/mui.min.css">
+        <link rel="stylesheet" type="text/css" href="lib/fontAwesome/css/font-awesome.min.css">
+        <link rel="stylesheet/less" href="less/coupon.less">
+        <script src="lib/less/less.js"></script>
+    </head>
+    <body>
+    <!-- 头部 -->
+    <header id="header">
+      <div class="head-box">
+            <i class="return-icon"><</i>
+            <h2>优惠券</h2>
+            <img src="./images/header_app.png" alt="">
+      </div>
+    </header>
+    <!-- 主体部分 -->
+    <main id="main">
+        <ul class="main-list">
+          <!-- <li>
+              <a href="#">
+                  <img src="http://www.juanlaoda.com/ImageUpload/2013310191729944.jpg" alt="">
+                  <p>肯德基</p>
+              </a>
+            </li> -->
+         
+      </ul>
+    </main>
+    <!-- 页脚 -->
+    <footer id="footer">
+      <div class="present">
+            <span><a href="index.html">首页</a>  <i>></i> 优惠券</span>
+        </div>
+      <div class="toolBar">
+        <a href="login.html">登录</a>
+        <a href="register.html">注册</a>
+        <a href="#" class="top"><img src="images/top.jpg" alt="">返回顶部</a>
+      </div>
+      <div class="siteInfo">
+        <p><a href="#" class="download">手机app下载</a><span>慢慢买手机版--掌上比价平台</span></p>
+        <p>m.manmanbuy.com</p>
+
+      </div>
+    </footer>
+    <!-- 优惠券商品列表模板 -->
+    <script id="getcouponTPL" type="text/html">
+
+        {{ each result value }}
+            <li>
+                <a href="{{value.couponLink}}?id={{value.couponId}}&title={{value.couponTitle}}">
+                <img  src="{{value.couponImg}}" alt="">
+                    <p>{{value.couponTitle}}</p>
+                </a>
+            </li>
+        {{ /each }}
+    </script>
+
+    
+
+    <!-- 引入js -->
+    <script src="lib/mui/js/mui.js"></script>
+    <script src="lib/zepto/zepto.min.js"></script>
+    <script src="lib/artTemplate/template-web.js"></script>
+    <script src="js/coupon.js"></script>
+    </body>
+</html>

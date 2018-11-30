@@ -1,0 +1,192 @@
+@import 'base.less';
+
+body {
+  padding: 0.87rem 0 0;
+}
+header {
+  .head-box{
+    padding: 0;
+    display: flex;
+    height: 0.47rem;
+    a {
+      position: absolute;
+      &.back {
+        font-size: 0.25rem;
+        left: 0.1rem;
+      }
+      &.download {
+        right: 0.1rem;
+      }
+    }
+    h4 {
+      flex:1;
+      text-align: center;
+    }
+  }
+}
+#main {
+  height: auto;
+  .name-id {
+    padding: 0.2rem 0;
+    color: #ccc;
+    font-size: 0.12rem;
+  }
+  .content {
+    .right-img {
+      float: right;
+      width: 1.2rem;
+      height: 1.2rem;
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+      .left-content {
+        width: 100%;
+        line-height: 0.24rem;
+        padding-left: 0.2rem;
+        p {
+          font-size: 0.16rem;
+          color: #606060;
+        }
+      }
+    .loaction {
+      width: 100%;
+      .drop {
+        padding: 0 0 10px;
+        background-color: #fff;
+        box-shadow: 1px 2px 5px rgba(0,0,0,.1);
+        border-color: #f1f1f1 #f1f1f1 #dbdbdb;
+        border-width: 0 1px 1px;
+        border-style: solid;
+        width: 136px;
+        margin: 0 auto;
+      }
+        #disstorck {
+            >li {
+              font-size: 12px;
+              line-height: 20px;
+              >a {
+                display: block;
+                padding: 0 10px;
+                >span {
+                  border-bottom: 1px dotted silver;
+                  display: block;
+                  text-align: left;
+                  >strong {
+                    color: #f27b04;
+                    float: right;
+                    font-weight: 400;
+                  }
+                }
+              }
+            }
+        }
+    }
+  }
+  .goBuy {
+    margin-top: 0.1rem;
+    padding: 0 0.2rem;
+    height: 0.3rem;
+    line-height: 0.3rem;
+    .Buy {
+      border-radius: 0.05rem;
+      background-color: @main-color;
+      color: #fff;
+      display: block;
+      width: 100%;
+      height: 100%;
+      text-align: center;;
+    }
+  }
+  .banner {
+    width: 100%;
+    padding: 0.1rem;
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+  .talks {
+    .tit {
+      font-size: 0.16rem;
+      padding: 0.05rem;
+    }
+    .form {
+      border: 2px solid #eceae8;
+      border-radius: 2px;
+      // padding: 4px 0 0 4px;
+      background-color: #fff;
+    }
+    .reply {
+      padding: 5px ;
+      textarea {
+        padding: 0.05rem 0.08rem;
+        margin: 0;
+      }
+      .ctrl {
+        background-color: #fbfbfb;
+        height: 36px;
+        border-bottom: 1px solid #f2f2f2;
+        margin-top: -0.06rem;
+        .tjdp {
+          float: right;
+        }
+      }
+    }
+    .list {
+      ul {
+        li {
+            display: flex;
+            padding: 18px 10px;
+            background-color: #fff;
+          .con {
+            flex:1;
+            padding-left: 0.1rem;
+            .name {
+              display: flex;
+              justify-content:space-between;
+              margin-bottom: 0.1rem;
+              .username {
+                color:blue;
+              }
+            }
+            .content {
+              font-size: 0.14rem;
+            }
+          }
+        }
+      }
+      .userimg {
+          width: 40px;
+          height: 40px;
+          float: left;
+          border-radius: 50%;
+          overflow: hidden;
+          img {
+            width: 100%;
+            height: 100%;
+          }
+      }
+    }
+  }
+}
+ 
+  // 面包屑导航
+  .breadcrumb {
+    height:0.36rem;
+    width: 100%;
+    line-height: 0.36rem;
+    padding-left: 0.1rem;
+    background: -webkit-gradient(linear,0 0,0 100%,from(#ffffff),to(#ebebeb));
+    font-size: 0.14rem;
+    border-bottom: 1px solid #ccc;
+  }
+
+
+footer {
+  position: static;
+  .toolBar {
+      margin:0 0  0.1rem;
+    }
+}

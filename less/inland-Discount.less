@@ -1,0 +1,102 @@
+@import "base.less";
+//头部的样式
+body {
+    padding: .39rem 0 1.02rem;
+}
+
+#header {
+    top: 0;
+    width: 100%;
+    position: fixed;
+    height: .4rem;
+    background-color: #ff841d;
+    .head-box {
+        padding: 0 .06rem;
+        border: 0px;
+        .fa-angle-left {
+            font-size: .30rem;
+            color: @font-color;
+        }
+        span {
+            flex: 1;
+            text-align: center;
+            font-size: .18rem;
+            line-height: .4rem;
+            color: @font-color;
+        }
+        .download-app {
+            padding-top: .05rem;
+            a {
+                background-size: .3rem .3rem;
+                display: block;
+                img {
+                    width: .30rem;
+                    height: .30rem;
+                }
+            }
+        }
+    }
+}
+
+//主体部分的代码
+#main {
+    overflow: visible;
+    height: 100%;
+    position: relative;
+    .mui-scroll-wrapper{
+        height: auto;
+        .mui-scroll{
+            height: auto;
+        }
+    }
+    .mui-table-view-cell {
+        // height: 3.5rem;
+        background-color: #fff;
+        padding: .06rem .07rem;
+        font-size: .14rem;
+        border: 1px solid #eeeeee;
+        >a:not(.mui-btn){
+            text-overflow:clip;
+        }
+        img {
+            width: 1.4rem;
+            height: 1.4rem;
+            margin: .1rem .25rem;
+        }
+        .title {
+            color: #333333;
+            white-space:normal;
+            font-weight: bold;
+            padding: 0 8px;
+            width: 1.76rem;
+            height: .42rem;
+            text-overflow:ellipsis;
+            overflow:hidden;
+            display: -webkit-box;
+            -webkit-box-orient: vertical;
+            -webkit-line-clamp:2;
+        }
+        .price{
+            color: #ff6c00;
+            margin-top: 4px;
+            font-size: 14px;
+            padding: 0 8px;
+            text-align: left;
+            text-align-last: left;
+            word-break: break-all;
+            display: -webkit-box;
+            -webkit-line-clamp: 1;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+            height: 18px;
+            line-height: 18px;
+        }
+        .info{
+            color: #a1a1a1;
+            font-size: 12px;
+            text-align: left;
+            padding: 0 8px;
+        }
+       
+    }
+}

@@ -1,0 +1,32 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd" >
+<!--
+2013-9-30: Created.
+-->
+<svg>
+<metadata>
+Created by iconfont
+</metadata>
+<defs>
+
+<font id="iconfont" horiz-adv-x="1024" >
+  <font-face
+    font-family="iconfont"
+    font-weight="500"
+    font-stretch="normal"
+    units-per-em="1024"
+    ascent="896"
+    descent="-128"
+  />
+    <missing-glyph />
+    
+    <glyph glyph-name="duicuo-" unicode="&#58992;" d="M489.6 754.4a369.12 369.12 0 1 1 369.28-369.28A369.12 369.12 0 0 1 489.6 754.4z m211.84-273.44L462.56 242.24a33.44 33.44 0 0 0-48 0l-137.44 137.44a33.44 33.44 0 1 0 48 48l113.92-113.92L654.08 528a33.44 33.44 0 1 0 48-48z m0 0"  horiz-adv-x="1024" />
+
+    
+    <glyph glyph-name="duicuo" unicode="&#58886;" d="M509.12 754.4a369.12 369.12 0 1 1 369.12-369.28A369.12 369.12 0 0 1 509.12 754.4z m189.28-512a33.76 33.76 0 0 0-24-57.44 33.44 33.44 0 0 0-23.84 9.92l-141.76 142.4-144-141.92a33.44 33.44 0 0 0-23.68-9.76 33.76 33.76 0 0 0-23.52 57.6l144 141.92-142.24 144a33.76 33.76 0 0 0 48 48l142.24-144 144 141.92a33.76 33.76 0 1 0 48-48L556.8 384z"  horiz-adv-x="1024" />
+
+    
+
+
+  </font>
+</defs></svg>

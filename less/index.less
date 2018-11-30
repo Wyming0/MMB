@@ -1,0 +1,137 @@
+@import "base.less";
+
+a {
+    text-decoration: none;
+
+}
+
+#main {
+    overflow: auto;
+
+    /* 导航 */
+
+    #nav {
+        height: 226px;
+        overflow: hidden;
+        
+        padding: .15rem .06rem;
+        .mui-row {
+            div {
+                text-align: center;
+                
+                a {
+                    width: 100%;
+                    text-decoration: none;
+                    display: block;
+                    img {
+                        vertical-align: middle;
+                        width: .7rem;
+                        height: .7rem;
+                        padding: 0.1rem;
+                        
+                    }
+                    .name {
+                        color: #5a5a5a;
+                        font-size: 0.13rem;
+                    }
+                    
+                }
+                
+            }
+        }
+    }
+
+    #discount {
+
+        .title {
+            a {
+                display: flex;
+                justify-content:space-between;
+                align-items:center;
+                padding: 0 0.1rem;
+                background-color: @main-color;
+                text-decoration: none;
+                img {
+                  width: 0.2rem;
+                  height: 0.2rem;
+                }
+                h4 {
+                  line-height: 0.4rem;
+                  color: #fff;
+                  margin: 0;
+                }
+            }
+        }
+
+        #list {
+            background-color: #efefef;
+            ul {
+                padding: 0.08rem 0.08rem;
+                li {
+                    
+                    padding: 0.07rem 0;
+                    border-bottom: 0.005rem solid @border-color;
+                    a {
+                        display: block;
+                        text-decoration: none;
+
+                        img {
+                            
+                            min-width: 1rem;
+                            min-height: 1rem;
+                            padding: .1rem .05rem;
+                        }
+                        .mui-media-body {
+                            padding-top: .12rem;
+                         
+                            
+                            .goods-title {
+                                color: #333;
+                                font-size: .15rem;
+                                white-space: normal;
+                                text-align: left;
+                                width: 95%;
+                               
+                               
+                                .sale {
+                                    color: red;
+                                    
+                                }    
+                            }
+                            .other {
+                                padding-top: 0.05rem;
+                                position: relative;
+                                color: #a1a1a1;
+                                .comment {
+                                    position: absolute;
+                                    right: 0.2rem;
+                                    .mui-icon-chat{
+                                      font-size: 0.12rem;
+                                         
+                                       
+                                    }
+                                }
+                            }
+                            
+
+                        }
+                        
+                    }
+                }
+            }
+            .more-bar {
+                width: 80%;
+                margin: 0.2rem 0.3rem;
+                a {
+                    width: 100%;
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+}
+
+// footer {
+//     position: static;
+   
+// }

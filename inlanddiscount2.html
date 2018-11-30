@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="slowbuy icon" href="favicon.ico" />
+    <title>国内折扣</title>
+    <link rel="stylesheet" type="text/css" href="lib/mui/css/mui.min.css">
+    <link rel="stylesheet" type="text/css" href="lib/fontAwesome/css/font-awesome.min.css">
+    <link rel="stylesheet/less" href="less/inland-Discount.less">
+    <script src="lib/less/less.js"></script>
+</head>
+
+<body>
+    <!-- 头部 -->
+    <header id="header">
+        <div class="head-box">
+            <a href="index.html" class="fa fa-angle-left">
+            </a>
+            <span>国内折扣</span>
+            <div class="download-app">
+                <a class="header-app" href="#"><img src="images/header_app.png" alt=""></a>
+            </div>
+        </div>
+    </header>
+    <!-- 主体部分 -->
+    <main id="main">
+            <div class="mui-scroll-wrapper">
+                    <div class="mui-scroll">
+                        <!--这里放置真实显示的DOM内容-->
+              
+        <section class="product" id="refreshContainer">
+        <div class="mui-content">
+            <div class="mui-row">
+                <!-- <div class=" mui-col-xs-6">
+                    <li class="mui-table-view-cell">
+                        <a>
+                            <img alt="" src="//m.360buyimg.com/mobilecms/s307x307_jfs/t3217/141/4553199596/67795/872d35ee/5849281eN23701ce4.jpg!q70.jpg">
+                            <div class="title">西域美农新疆特产五星和田红枣250g*2</div>
+                            <div class="price">19.8元(5件99元)</div>
+                            <div class="info">京东商城|10-22 13:28</div>
+                        </a>
+                    </li>
+                </div>
+                <div class="mui-col-xs-6">
+                        <li class="mui-table-view-cell">
+                            <a>
+                                <img alt="" src="//m.360buyimg.com/mobilecms/s307x307_jfs/t3217/141/4553199596/67795/872d35ee/5849281eN23701ce4.jpg!q70.jpg">
+                                <div class="title">西域美农新疆特产五星和田红枣250g*2</div>
+                                <div class="price">19.8元(5件99元)</div>
+                                <div class="info">京东商城|10-22 13:28</div>
+                            </a>
+                        </li>
+                    </div>
+                    <div class=" mui-col-xs-6">
+                        <li class="mui-table-view-cell">
+                            <a>
+                                <img alt="" src="//m.360buyimg.com/mobilecms/s307x307_jfs/t3217/141/4553199596/67795/872d35ee/5849281eN23701ce4.jpg!q70.jpg">
+                                <div class="title">西域美农新疆特产五星和田红枣250g*2</div>
+                                <div class="price">19.8元(5件99元)</div>
+                                <div class="info">京东商城|10-22 13:28</div>
+                            </a>
+                        </li>
+                    </div>
+                    <div class="mui-col-xs-6">
+                            <li class="mui-table-view-cell">
+                                <a>
+                                    <img alt="" src="//m.360buyimg.com/mobilecms/s307x307_jfs/t3217/141/4553199596/67795/872d35ee/5849281eN23701ce4.jpg!q70.jpg">
+                                    <div class="title">西域美农新疆特产五星和田红枣250g*2</div>
+                                    <div class="price">19.8元(5件99元)</div>
+                                    <div class="info">京东商城|10-22 13:28</div>
+                                </a>
+                            </li>
+                        </div> -->
+            </div>
+        </div>
+    </section>
+</div>
+</div>
+    </main>
+    <!-- 页脚 -->
+    <footer id="footer">
+        <div class="toolBar">
+            <a href="#">登录</a>
+            <a href="#">注册</a>
+            <a href="#main" class="top"><img src="images/top.jpg" alt="">返回顶部</a>
+        </div>
+        <div class="siteInfo">
+            <p><a href="#" class="download">手机app下载</a><span>慢慢买手机版--掌上比价平台</span></p>
+            <p>m.manmanbuy.com</p>
+        </div>
+    </footer>
+    <!-- 创建模板 -->
+    <script id="inland-DiscountTpl" type="text/html">
+        {{each result value index}}
+        <div class=" mui-col-xs-6 ">
+                <li class="mui-table-view-cell">
+                    <a  href="discount-product.html?productid={{value.productId}}">
+                        {{@value.productImg}}
+                        <div class="title">{{value.productName}}</div>
+                        <div class="price">{{value.productPrice}}</div>
+                        <br>
+                        <div class="info">{{value.productFrom}}|{{value.productTime}}</div>
+                    </a>
+                </li>
+            </div>    
+        {{/each}}
+    </script>
+    <!-- 引入js -->
+    <script src="lib/mui/js/mui.js"></script>
+    <script src="lib/zepto/zepto.min.js"></script>
+    <script src="lib/artTemplate/template-web.js"></script>
+    <script src="js/inland-Discount.js"></script>
+</body>
+
+</html>

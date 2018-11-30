@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="slowbuy icon" href="favicon.ico" />
+    <title>慢慢买-主页</title>
+    <link rel="stylesheet" type="text/css" href="lib/mui/css/mui.min.css">
+    <link rel="stylesheet" type="text/css" href="lib/fontAwesome/css/font-awesome.min.css">
+    <link rel="stylesheet/less" href="less/brandtitle.less">
+    <script src="lib/less/less.js"></script>
+</head>
+
+<body>
+    <!-- 头部 -->
+    <header id="header" class="header">
+        <div class="logo"><a href="index.html" title="慢慢买"><img src="images/header_logo.png" alt=""></a></div>
+        <div class="appdown"><a href="##"><img src="images/header_app.png" alt="手机app下载"></a></div>
+
+    </header>
+
+    <section id="form-search">
+        <form>
+            <input type="search" placeholder="请输入你想比价的商品">
+        </form>
+        <a href="#" class="download">搜索</a>
+    </section>
+
+
+    <!-- 主体部分 -->
+    <main id="main">
+            <div class="mui-scroll-wrapper">
+                    <div class="mui-scroll">
+                        <!--这里放置真实显示的DOM内容-->
+                        <div class="allBrand"><a href="index.html">首页</a> > <a href="brandTitle.html">全部分类</a>></div>
+                        <div class="page-header">
+                            <a href="#">
+                                热门品牌排行
+                            </a>
+                
+                        </div>
+                        <div class="boxlist">
+                            <ul class="boxul">
+                                <li>
+                                    <a href="#">
+                                        <span>平板电视十大品牌</span>
+                                        <img src="http://www.zuyushop.com/wap/images/arrow1.gif" alt="">
+                                    </a>
+                
+                                </li>
+                                <!-- <li>
+                                    <a href="#">液晶电视十大品牌</a>
+                                    <img src="http://www.zuyushop.com/wap/images/arrow1.gif" alt="">
+                                </li>
+                                <li>
+                                    <a href="#">LED电视十大品牌</a>
+                                    <img src="http://www.zuyushop.com/wap/images/arrow1.gif" alt="">
+                                </li> -->
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+       
+    </main>
+
+    <!-- 品牌大全列表的模板 -->
+    <script id="getbrandtitleTpl" type="text/html">
+        {{ each result value }}
+        <li>
+            <a href="getbrandlist.html?brandtitleid={{value.brandTitleId}} ">
+              <span>{{value.brandTitle}}</span>
+              <img src="http://www.zuyushop.com/wap/images/arrow1.gif" alt="">
+            </a>
+            
+        </li>
+        {{ /each }}
+    </script>
+
+
+    <!-- 页脚 -->
+    <footer>
+        <div class="brandSort">
+            <a href="#">
+                <h4>品牌排行</h4>
+                <img src="images/more.png" alt="">
+            </a>
+        </div>
+        <div class="toolBar">
+            <a href="login.html">登录</a>
+            <a href="register.html">注册</a>
+            <a href="#" class="top"><img src="images/top.jpg" alt="">返回顶部</a>
+        </div>
+        <div class="siteInfo">
+            <p><a href="#" class="download">手机app下载</a><span>慢慢买手机版--掌上比价平台</span></p>
+            <p>m.manmanbuy.com</p>
+
+        </div>
+    </footer>
+    <!-- 引入js -->
+    <script src="lib/mui/js/mui.js"></script>
+    <script src="lib/zepto/zepto.min.js"></script>
+    <script src="lib/artTemplate/template-web.js"></script>
+    <script src="js/brandtitle.js"></script>
+</body>
+
+</html>

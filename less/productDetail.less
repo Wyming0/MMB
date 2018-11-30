@@ -1,0 +1,208 @@
+@import "base";
+body {
+  padding-bottom: 0;
+}
+header{
+  background-color: #fff;
+}
+#main {
+  height: auto;
+  .product-title {
+    height: .4rem;
+    box-sizing: border-box;
+    background: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#dedede));
+    padding: 0 .2rem;
+    display: flex;
+    justify-content: space-between;
+    font-size: .14rem;
+    .reback {
+      line-height: .40rem;
+      a {
+        color: black;
+      }
+    }
+    .shaixuan {
+      height: .30rem;
+      line-height: .30rem;
+      text-align: center;
+      margin-top: .05rem;
+      background: -webkit-gradient(linear, left top, left bottom, from(#dedede), to(#fff));
+      border: 1px solid @border-color;
+      width: .5rem;
+      border-radius: .04rem;
+
+    }
+  }
+  .product-detail {
+    text-align: center;
+    .name {
+      padding: .15rem 0.2rem 0 0.2rem;
+      text-align: left;
+      color: black;
+    }
+    .sc {
+      width: .5rem;
+    }
+    .product-nav {
+      display: flex;
+      border-bottom: 1px solid #c14d00;
+      border-top: 1px solid #c14d00;
+      div {
+        flex: 1;
+        text-align: center;
+        color: #fff;
+        line-height: .30rem;
+        background: #ffc525;
+        font-size: .14rem;
+        &:nth-child(n+1){
+          border-left: 1px solid #c14d00;
+        }
+        &.active {
+          background-color: #ffa025;
+        }
+      }
+    }
+    table {
+      padding: .1rem .1rem;
+      border-bottom: 1px solid @border-color;
+      height: .4rem;
+      line-height: .4rem;
+      font-size: .14rem;
+      td {
+        &:nth-child(2){
+          float: left;
+        }
+        &:nth-child(3){
+          float: right;
+          color: red;
+        }
+      }
+      img {
+          vertical-align: middle;
+      }
+      .right {
+        span {
+          font-size: .15rem;
+          color: #e92322;
+        }
+        a {
+          display: inline-block;
+          background-color: #ff5500;
+          width: .56rem;
+          height: .24rem;
+          line-height: .24rem;
+          text-align: center;
+          border-radius: .05rem;
+          color: #fff;
+          font-size: .14rem;
+        }
+      }
+    }
+    .tab2 {
+      height: 0;
+    }
+  }
+  .prompt {
+    padding: .10rem;
+    font-size: .12rem;
+    color: #666;
+    line-height: .17rem;
+    text-align: left;
+    border-bottom: 3px solid #aaa;
+  }
+  .comment {
+    .comment-title {
+      margin-top: 1px;
+      line-height: .4rem;
+      text-align: center;
+      color: black;
+      font-size: .14rem;
+      background-color: #cccccc;
+    }
+    .comments {
+      color: #666;
+      .comment-content {
+        padding: .1rem;
+        border-bottom: 1px solid @border-color;
+        .data {
+          display: flex;
+          justify-content: space-between;
+        }
+        .from {
+          display: flex;
+          justify-content: space-between;
+          .start {
+            img {
+              width: 18px;
+            }
+          }
+        }
+        .comContent {
+          color: #0f0f0f;
+
+        }
+      }
+
+    }
+  }
+}
+footer {
+  position: relative;
+  width: 100%;
+  background-color: #efefef;
+  .brandSort {
+    width: 100%;
+    a {
+      width: 100%;
+      display: flex;
+      align-items:center;
+      padding: 0 0.1rem;
+      background-color: @main-color;
+      img {
+        width: 0.2rem;
+        height: 0.2rem;
+      }
+      h4 {
+        line-height: 0.4rem;
+        color: #fff;
+        margin: 0;
+      }
+    }
+  }
+  .toolBar {
+    height: 0.34rem;
+    line-height: 0.34rem;
+    border-top: 0.01rem solid #ccc;
+    border-bottom: 0.01rem solid #ccc;
+    margin: 0.1rem 0;
+    display: flex;
+    >a {
+      flex:1;
+      font-size: 0.14rem;
+      text-align: center;
+      &.top {
+        img {
+          height: 0.15rem;
+          width: 0.15rem;
+        }
+      }
+      &+a {
+        border-left: 0.01rem solid #ccc;
+      }
+    }
+  }
+  .siteInfo {
+    display: flex;
+    align-items:center;
+    flex-direction:column;
+    padding-bottom: 0.06rem;
+    .download {
+      margin-right: 0.05rem;
+      color: @main-color;
+    }
+    p {
+      margin:0;
+      color: #333;
+    }
+  }
+}

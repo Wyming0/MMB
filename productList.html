@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <link rel="slowbuy icon" href="favicon.ico"/>
+  <title>慢慢买-主页</title>
+  <link rel="stylesheet" type="text/css" href="lib/mui/css/mui.min.css">
+  <link rel="stylesheet" type="text/css" href="lib/fontAwesome/css/font-awesome.min.css">
+  <link rel="stylesheet/less" href="less/productList.less">
+  <script src="lib/less/less.js"></script>
+</head>
+<body>
+<!-- 头部 -->
+<header>
+  <div class="head-box">
+    <a href="#" class="logo">
+      <!-- <img src="images/mlogo.png" alt=""> -->
+    </a>
+    <form>
+      <i class="fa fa-search"></i>
+      <input type="search" placeholder="请输入要搜索的内容">
+    </form>
+    <a href="#" class="download">下载</a>
+  </div>
+  <div class="head-tab">
+    <ul>
+      <li><a href="index.html">首页</a></li>
+      <li><a href="moneyctrl.html">省钱控</a></li>
+      <li><a href="history.html">查历史价</a></li>
+      <li><a href="category.html" class="active">比价搜索</a></li>
+      <li><a href="inlanddiscount.html">国内折扣</a></li>
+      <li><a href="baicaijia.html">白菜价</a></li>
+      <li><a href="#">小时风云榜</a></li>
+    </ul>
+  </div>
+</header>
+<!-- 主体部分 -->
+<main id="main">
+  <!--<div class="mui-scroll-wrapper">-->
+    <!--<div class="mui-scroll">-->
+      <div class="product-list-title">
+        <div class="reback">
+          <a href="index.html">首页</a>
+          <span> > </span>
+          <a href="#">全部分类</a>
+          <span> > </span>
+          <a href="#" class="categoty"></a>
+        </div>
+        <div class="shaixuan">
+          筛选
+        </div>
+      </div>
+      <div class="product-list-content">
+        <ul>
+          <li>
+            <div class="left-pic">
+              <img src="images/gengduo.png" alt="" width="100" height="100">
+            </div>
+            <div class="right-detail">
+              <p class="title">海尔(Haier) KFRd-72NW/56PBA12 3匹 冷暖定频 风管式中央空调</p>
+              <p class="price">￥<span>6080</span></p>
+              <p class="else">
+                <span>3商城报价</span>
+                <span>有66人评论</span>
+              </p>
+              <p class="product-id" data-id="1" style="display: none;"></p>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <div class="product-bottom">
+        <span class="before">上一页</span>
+        <select name="num" id="num">
+        </select>
+        <span class="after">下一页</span>
+      </div>
+
+      <footer>
+        <div class="brandSort">
+          <a href="#">
+            <h4>品牌排行</h4>
+            <img src="images/more.png" alt="">
+          </a>
+        </div>
+        <div class="toolBar">
+          <a href="#">登录</a>
+          <a href="#">注册</a>
+          <a href="#" class="top"><img src="images/top.jpg" alt="">返回顶部</a>
+        </div>
+        <div class="siteInfo">
+          <p><a href="#" class="download">手机app下载</a><span>慢慢买手机版--掌上比价平台</span></p>
+          <p>m.manmanbuy.com</p>
+        </div>
+      </footer>
+    <!--</div>-->
+  <!--</div>-->
+</main>
+<!-- 页脚 -->
+
+<!-- 引入js -->
+<script src="lib/mui/js/mui.js"></script>
+<script src="lib/zepto/zepto.min.js"></script>
+<script src="lib/artTemplate/template-web.js"></script>
+<script type="text/html" id="productListTpl">
+  {{each result value }}
+  <li>
+    <div class="left-pic">
+      {{@value.productImg}}
+    </div>
+    <div class="right-detail">
+      <p class="title">{{value.productName}}</p>
+      <p class="price"><span>{{value.productPrice}}</span></p>
+      <p class="else">
+        <span>{{value.productQuote}}</span>
+        <span>{{value.productCom}}</span>
+      </p>
+      <p class="product-id" data-id="{{value.productId}}" style="display: none;"></p>
+    </div>
+  </li>
+  {{/each}}
+</script>
+<script src="js/productList.js"></script>
+</body>
+</html>

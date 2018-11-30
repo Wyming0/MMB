@@ -1,0 +1,202 @@
+@import 'base.less';
+#header {
+    background-color: @main-color;
+    width: 100%;
+    height: .4rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+    line-height: 100%;
+    a {
+        padding: .05rem;
+        width: .4rem;
+        font-size: .2rem;
+        text-align: center;
+        color: #fff;
+        img{
+            width: 100%;
+        }
+    }
+}
+
+#nav {
+    background-color: #fff;
+    height: .4rem;
+    line-height: 100%;
+    width: 100%;
+    text-align: center;
+    border-bottom: .01rem solid @border-color;
+    position: fixed;
+    left: 0;
+    top: 40px;
+    .left {
+        float: left;
+        width: 90%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        div {
+            flex: 1;
+            font-size: .16rem;
+            &.shopping {}
+            select {
+                text-align: center;
+                margin: 0 auto;
+                display: block;
+                padding: 0;
+                width: .56rem;
+                option {
+                    display: inline-block;
+                }
+            }
+            &.fa-caret-down {
+                &::after {
+                    font-family: 'FontAwesome';
+                    content: "\f0d7";
+                    font-size: .16rem;
+                }
+                &::before {
+                    content: "";
+                }
+            }
+            &.fa-caret-up {
+                &::after {
+                    font-family: 'FontAwesome';
+                    content: "\f0d8";
+                    font-size: .16rem;
+                }
+                &::before {
+                    content: "";
+                }
+            }
+        }
+    }
+    .right {
+        float: left;
+        width: 10%;
+        height: 100%;
+        a {
+            display: block;
+            margin: auto;
+            font-size: .2rem;
+            line-height: .4rem;
+            border-left: .01rem solid @border-color;
+        }
+    }
+}
+
+.menu {
+    position: absolute;
+    top: .8rem;
+    width: 100%;
+    z-index: 99;
+    background-color: white;
+    ul {
+        display: none;
+        li {
+            width: 100%;
+            height: .3rem;
+            text-align: left;
+            line-height: .3rem;
+            border-bottom: .01rem solid @border-color;
+            padding: 0 .1rem;
+            position: relative;
+            font-size: .16rem;
+            &.fa-check {
+                &::after {
+                    font-family: 'FontAwesome';
+                    content: "\f00c";
+                    font-size: .16rem;
+                    position: absolute;
+                    right: .1rem;
+                    color: @main-color;
+                }
+                &::before {
+                    content: "";
+                }
+            }
+            
+        
+        }
+        div{
+            width: 100%;
+            height: .3rem;
+            text-align: left;
+            line-height: .3rem;
+            border-bottom: .01rem solid @border-color;
+            padding: 0 .1rem;
+            position: relative;
+            font-size: .16rem;
+            &.fa-check {
+                &::after {
+                    font-family: 'FontAwesome';
+                    content: "\f00c";
+                    font-size: .16rem;
+                    position: absolute;
+                    right: .1rem;
+                    color: @main-color;
+                }
+                &::before {
+                    content: "";
+                }
+            }
+        }
+    }
+}
+
+body {
+    padding: 0.8rem 0 0;
+    position: relative;
+}
+
+#main {
+    background-color: @main-color;
+    width: 100%;
+    padding: .05rem .1rem;
+    .out {
+        width: 50%;
+        padding: .05rem;
+        float: left;
+    }
+    a {
+        width: 100%;
+        .list {
+            float: left;
+            width: 100%;
+            background-color: #fff;
+            text-align: left;
+            box-sizing: border-box;
+            img {
+                width: 100%;
+            }
+            p {
+                padding: 0 .05rem;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+                margin: 0;
+                width: 100%;
+                span {
+                    color: @main-color;
+                }
+                strong {
+                    color: @main-color;
+                    font-size: .18rem;
+                }
+            }
+        }
+    }
+}
+.top{
+    display: none;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    z-index: 99;
+    font-size: 60px;
+    color: @main-color;
+    &:active{
+        color: @main-color;
+    }
+}

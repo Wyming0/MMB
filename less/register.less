@@ -1,0 +1,57 @@
+@import "base";
+body {
+  padding-top: .47rem;
+}
+main {
+  height: auto;
+  .info {
+    padding: 0 .1rem;
+
+    .info-one {
+      display: flex;
+      align-items: center;
+      margin-top: .12rem;
+      border-bottom: 1px solid @border-color;
+      .flag {
+        font-size: .20rem;
+        color: @main-color;
+      }
+      .flag1 {
+        font-size: .20rem;
+        color: black;
+      }
+      label {
+        width: 15%;
+        font-size: .2rem;
+        text-align: center;
+        border-right: 1px solid @border-color;
+        color: @main-color;
+      }
+      input{
+        font-size: .15rem;
+        border: none;
+        flex: 1;
+        margin: 0;
+      }
+      .code {
+        width: .80rem;
+        text-align: center;
+        height: .3rem;
+        background-color: @main-color;
+        line-height: .3rem;
+        color: #fff;
+        border-radius: 6px;
+      }
+    }
+    .register-btn {
+      width: 100%;
+      background-color: @main-color;
+      margin-top: .12rem;
+      height: .4rem;
+      color: #fff;
+      font-size: .18rem;
+      border: none;
+    }
+  }
+
+}

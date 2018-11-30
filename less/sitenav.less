@@ -1,0 +1,168 @@
+@import 'base.less';
+/* 头部的样式 */
+
+body {
+    padding: 0.45rem 0 1.61rem 0;
+    background-color: #f4f4f4;
+}
+
+#header {
+    position: fixed;
+    left: 0;
+    top: 0;
+    background-color: red;
+    display: flex;
+    justify-content: space-between;
+    height: 0.45rem;
+    line-height: 0.45rem;
+    .icon-back {
+        font-weight: normal;
+        padding-left: 0.1rem;
+        a {
+            float: left;
+            width: 0.24rem;
+            height: 0.44rem;
+            line-height: 0.44rem;
+            display: block;
+            font-weight: 700;
+            font-size: 0.3rem;
+            color: white;
+            padding-left: 0.2rem;
+            font-family: 'SimSun';
+        }
+    }
+    .header-text {
+        font-size: 0.2rem;
+        span {
+            color: #fff;
+        }
+    }
+    .appdown {
+        a {
+            img {
+                width: 0.36rem;
+                padding-top: 0.05rem;
+                padding-right: 0.03rem;
+            }
+        }
+    }
+}
+
+/* 主体部分的样式 */
+
+#main {
+    .link {
+        padding-top: 0.1rem;
+        padding-bottom: 0.1rem;
+        width: 3rem;
+        margin: 0.1rem auto;
+        float: none;
+        a {
+            padding: 0.1rem 0.08rem;
+            background-color: #f4f4f4;
+            border: 0.01rem solid #bfbfbf;
+            float: left;
+            margin: 0 0 0.05rem 0.05rem;
+            border-radius: 0.03rem;
+            img {
+                margin-right: 0.05rem;
+            }
+        }
+        a:nth-child(1),
+        a:nth-child(2),
+        a:nth-child(3) {
+            animation: fadeInUp 1.5s ease-in-out both;
+        }
+        a:nth-child(4),
+        a:nth-child(5),
+        a:nth-child(6) {
+            animation: fadeInUp 1.5s .2s ease-in-out both;
+        }
+        a:nth-child(7),
+        a:nth-child(8),
+        a:nth-child(9) {
+            animation: fadeInUp 1.5s .4s ease-in-out both;
+        }
+        a:nth-child(10),
+        a:nth-child(11),
+        a:nth-child(12) {
+            animation: fadeInUp 1.5s .6s ease-in-out both;
+        }
+        a:nth-child(13),
+        a:nth-child(14),
+        a:nth-child(15){
+            animation: fadeInUp 1.5s .8s ease-in-out both;
+        }
+        a:nth-child(16),
+        a:nth-child(17),
+        a:nth-child(18){
+            animation: fadeInUp 1.5s 1.0s ease-in-out both;
+        }
+        a:nth-child(19),
+        a:nth-child(20),
+        a:nth-child(21){
+            animation: fadeInUp 1.5s 1.2s ease-in-out both;
+        }
+        a:nth-child(22),
+        a:nth-child(23),
+        a:nth-child(24){
+            animation: fadeInUp 1.5s 1.4s ease-in-out both;
+        }
+        a:nth-child(25),
+        a:nth-child(26),
+        a:nth-child(27){
+            animation: fadeInUp 1.5s 1.6s ease-in-out both;
+        }
+     
+        a:nth-child(28),
+        a:nth-child(29){
+            animation: fadeInUp 1.5s 1.8s ease-in-out both;
+        }
+      
+        a:nth-child(30){
+            animation: fadeInUp 1.5s 2s ease-in-out both;
+        }
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translate3d(0, 100%, 0);
+        transform: translate3d(0, 100%, 0);
+    }
+    to {
+        opacity: 1;
+        transform: none;
+        transform: none;
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translate3d(0, 100%, 0);
+        transform: translate3d(0, 100%, 0);
+    }
+    to {
+        opacity: 1;
+        transform: none;
+        transform: none;
+    }
+}
+
+/* 底部样式 */
+
+#footer {
+    z-index: 1000;
+    .brand {
+        padding: 0.08rem;
+        border-bottom: 0.01rem solid #ccc;
+        margin-bottom: 0.3rem;
+        a {
+            display: block;
+            color: #000;
+            font-size: 0.1rem;
+        }
+    }
+}

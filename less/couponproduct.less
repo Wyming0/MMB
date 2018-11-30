@@ -1,0 +1,163 @@
+@import "base.less";
+
+i{
+    font-style: normal;
+}
+ul,li{ padding:0;margin:0;list-style:none};
+p {
+    padding: 0;
+    margin: 0;
+}
+body {
+    padding: .46rem 0 0;
+}
+
+#header {
+    z-index: 999;
+    height: .46rem;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    background-color: @main-color;
+    color: #fff;
+    .head-box {
+        height: 100%;
+        width: 100%;
+        // max-height: 34px;
+        
+        i {
+            width: .4rem;
+            height: .4rem;
+            line-height: .4rem;
+            text-align: center;
+            float: left;
+            // height: 34px;
+            font-size: .26rem;
+            font-family: "SimSun";
+        }
+        img{
+                float: right;
+                width: .34rem;
+                height: .34rem;
+                max-height: .34rem;
+            
+        }
+        h2 {
+            font-size: .22rem;
+            margin: 0 auto;
+        }
+    }
+
+    
+}
+
+#main {
+    width: 100%;   
+    overflow: auto;
+     height: 100%;
+    .hint {
+        line-height: .3rem;
+        text-align: center;
+    }
+    ul {
+        li {
+            width: 100%;
+            height: 1.24rem;
+             font-size: .14rem;
+            >a {
+                
+                img {
+                    max-width: .98rem;
+                    width: .98rem;
+                    height: .98rem;
+                }
+                h4 {
+                    display: -webkit-box;
+                        -webkit-box-orient: vertical;
+                        -webkit-line-clamp: 3;
+                        overflow: hidden;
+                    color: rgb(90, 90, 90);
+                    font-size: .14rem;
+                    white-space: normal;
+                    line-height: .17rem;
+                }
+                p {
+                    color: @main-color;
+                }
+                div {
+                    color: @border-color;
+                    i {
+                        float: right;
+                        font-size: .16rem;
+                        
+                    }
+                }
+            }
+        }
+    }
+} 
+
+#footer {
+    position: static;
+    .present {
+        width: 100%;
+        height: .33rem;
+        background-color: @main-color;
+        color: #fff;
+        font-size: .14rem;
+        line-height: .33rem;
+        padding-left: .1rem;
+        margin: .15rem 0px;
+        margin-top: 0rem;
+        i {
+          font-family: "SimSun";  
+        }
+    }
+}
+
+
+#description {
+    display: none;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .5) ;
+    position: absolute;
+    
+    top: 0;
+    z-index: 20;
+    .close {
+        width: .2rem;
+        height: .2rem;
+        position: absolute;
+        right: .1rem;
+        top: .6rem;
+        background-color: #fff;
+        color: #000;
+        border-radius: .1rem;
+        font-size: .16rem;
+        text-align: center;
+        line-height: .2rem;
+    }
+    .content {
+        width: 1.8rem;
+        height: 1.6rem;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        overflow: hidden;
+
+        ul {
+            height: 100%;
+            width: auto;
+            li{
+                // float: left;
+                width: 1.8rem;
+                // height: 100%;
+                background-color: #fff;
+            }
+        }
+        
+    }
+    
+}

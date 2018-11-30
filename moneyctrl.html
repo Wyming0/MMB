@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
+    <link rel="slowbuy icon" href="favicon.ico" />
+    <title>慢慢买-省钱控</title>
+    <link rel="stylesheet" type="text/css" href="lib/mui/css/mui.min.css" />
+    <link rel="stylesheet" type="text/css" href="lib/fontAwesome/css/font-awesome.min.css" />
+    <link rel="stylesheet/less" href="less/savemoney.less" />
+    <script src="lib/less/less.js"></script>
+</head>
+
+<body>
+    <!-- 头部 -->
+    <header>
+        <div class="savemoney">
+            <div class="icon"><a href="index.html">&lt;</a></div>
+            <div class="text"><span>省钱控 - 最新优惠</span></div>
+            <div class="appdown">
+                <a href="#"> <img src="images/header_app.png" alt="" /> </a>
+            </div>
+        </div>
+    </header>
+    <div class="mui-scroll-wrapper">
+        <div class="mui-scroll">
+            <!--这里放置真实显示的DOM内容-->
+                <!-- 主体部分 -->
+    <main id="main">
+        <ul class="mui-table-view"></ul>
+    </main>
+    <!-- 页数部分 -->
+    <div class="page">
+        <button class="btn-up">上一页</button>
+        <select name="" id="select">
+        </select>
+        <button class="btn-down">下一页</button>
+    </div>
+    <!-- 页脚 -->
+    <footer>
+        <div class="toolBar">
+            <a href="login.html">登录</a> <a href="register.html">注册</a>
+            <a href="#" class="top">返回顶部</a>
+        </div>
+        <div class="siteInfo">
+            <p>
+                <a href="#" class="download">手机app下载</a><span>慢慢买手机版--掌上比价平台</span>
+            </p>
+            <p>m.manmanbuy.com</p>
+        </div>
+
+    </footer>
+        </div>
+    </div>
+
+    <!-- 回到顶部 -->
+    <!-- <section><i class="fa fa-arrow-circle-up"></i></section> -->
+
+    <script id="saveMoneyTpl" type="text/html">
+        {{each result value index}}
+            <li class="mui-table-view-cell mui-media">
+              <a href="moneyctrlDetail.html?productid={{value.productId}}">
+                  <!-- 媒体列表的左边 -->
+              <div class="mui-pull-left product-left">
+                {{@value.productImgSm}}
+              </div>
+              <!-- 媒体列表的右边 -->
+              <div class="mui-media-body product-right">
+                <span class="product-name">{{value.productName}}</span>
+                <span class="product-price">{{value.productPinkage}}</span>
+                <!-- 商品的参数 -->
+                <div class="product-params">
+                    <div class="product-message">
+                        {{value.productFrom}} | <span>{{value.productTime}}</span>
+                    </div>
+                    <div class="product-comment ">
+                        <span>{{value.productComCount}}</span>
+                    </div>
+                </div>
+              </a>
+            </li>
+        {{/each}}
+    </script>
+    <script id="saveMoneyTplOp" type="text/html">
+        <%for (var i=0;i< opt;i++) {%>
+            <option value="<%=i+1 %>"><%=i+1 %>/<%=opt%></option>
+        <%}%>
+  </script>
+    <!-- 引入js -->
+    <script src="lib/mui/js/mui.min.js"></script>
+    <script src="lib/zepto/zepto.min.js"></script>
+    <script src="lib/artTemplate/template-web.js"></script>
+    <script src="js/savemoney.js"></script>
+</body>
+
+</html>

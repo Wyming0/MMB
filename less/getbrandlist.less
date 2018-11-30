@@ -1,0 +1,202 @@
+@import "base.less";
+
+body {
+  padding: 0.87rem 0;
+}
+header {
+  background-color: #fff;
+}
+#main {
+   height: auto;
+   width: 100%;
+   overflow: auto;
+   background-color: #f2f2f2;
+   .title {
+    padding: 0.1rem 0.05rem;
+    color: #874604;
+    background-color: #f3f3f3;
+    border-bottom: 1px solid #ccc;
+      h4 {
+        font-size: 0.16rem;
+        font-weight: 600;
+        margin: 0;
+      }
+   }
+   .model2 .title h4 {
+    font-size: 0.14rem;
+   }
+   // 销量和名牌的content
+   .content {
+    // 去掉15的间隔
+    .mui-table-view-cell {
+      &:after {
+        left:0;
+      }
+    }
+    //名牌
+    .mediaitems {
+      .top {
+        color:#fff;
+        width: 0.2rem;
+        height: 0.2rem;
+        background-color: #c9c9c9;
+        line-height: 0.2rem;
+        text-align: center;
+        font-size: 0.16rem;
+      }
+      i.fa-chevron-right {
+        font-size: 0.2rem;
+        color: #a2a2a2;
+        position: absolute;
+        right: 0.05rem;
+        top: 0.2rem;
+      }
+      .top1 {
+        background-color: #f10e0e;
+      }      
+      .top2 {
+        background-color: #ff9314;
+      }     
+       .top3 {
+        background-color: #8adf5b;
+      }
+      p.brandtitle {
+        color: #000;
+        font-size: 0.16rem;
+      }
+      p.sales {
+        font-size: 0.12rem;
+      }
+    }
+    //销量
+    .salesTopItems {
+      .saletopImg {
+        width: 1.0rem;
+        height:1.0rem;
+        max-width: 2.0rem;
+        margin: 0;
+      }
+      p.brandtitle {
+        white-space: pre-wrap;
+        word-break: break-all;
+        color:#333;
+      }
+      p.brandInfo {
+        display: flex;
+        justify-content:space-between;
+        margin: 0.1rem 0;
+        span.price {
+          font-size: 0.18rem;
+          color: #ea3900;
+          vertical-align: middle;
+        }
+        span.star {
+          background-image: url("../images/stardefault.svg");
+          display: inline-block;
+          width: 90px;
+          height: 18px;
+          vertical-align: middle;
+          i.star5 {
+            background-image: url("../images/star.svg");
+            display: inline-block;
+            width: 90px;
+            height: 18px;
+          }
+        }
+      }
+      p.other {
+        font-size: 12px;
+      }
+    }
+    //评论
+    .comentItems {
+      background-color: #f2f2f2;
+      border-bottom: 1px solid #e7e7e7;
+       a {
+        margin-bottom: 0.04rem;
+        img {
+          width: 0.8rem;
+          height: 0.8rem;
+          max-width: 1.6rem;
+        }
+        p.brandtitle {
+          color: #999999;
+          line-height: 22px;
+          font-size: 14px;
+          word-break: break-all;
+          white-space: pre-wrap;
+        }
+       }
+       .commentBox {
+        background-color: #f8f8f8;
+        padding: 0.1rem;
+        border: 1px solid #e7e7e7;
+        position: relative;
+          p.name {
+            span.star {
+              background-image: url("../images/stardefault.svg");
+              display: inline-block;
+              width: 90px;
+              height: 18px;
+              vertical-align: middle;
+              margin-top: -0.04rem;
+              i.star5 {
+                background-image: url("../images/star.svg");
+                display: inline-block;
+                width: 90px;
+                height: 18px;
+              }
+            }
+            span.time {
+              float: right;
+            }
+          }
+        p.txt {
+          margin-top: 0.1rem;
+          line-height: 0.22rem;
+          font-size: 0.15rem;
+          color: #000;
+        }
+        &:before {
+          content: '';
+          width: 0;
+          height: 0;
+          border-width:0.1rem;
+          border-style:solid;
+          border-color:transparent transparent #e7e7e7;
+          position: absolute;
+          left:0.3rem;
+          top: -0.21rem;
+        }
+        &:after {
+          content: '';
+          width: 0;
+          height: 0;
+          border-width:0.09rem;
+          border-style:solid;
+          border-color:transparent transparent #f8f8f8;
+          position: absolute;
+          left:0.31rem;
+          top: -0.18rem;
+        }
+       }
+    }
+   }
+  .breadcrumb {
+    height:0.36rem;
+    width: 100%;
+    line-height: 0.36rem;
+    padding-left: 0.1rem;
+    background: -webkit-gradient(linear,0 0,0 100%,from(#ffffff),to(#ebebeb));
+    font-size: 0.14rem;
+    border-bottom: 1px solid #ccc;
+  }
+}
+
+footer {
+  padding-top: 0.1rem;
+  position: static;
+  .toolBar {
+    margin-top: 0;
+  }
+}

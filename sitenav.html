@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <link rel="slowbuy icon" href="favicon.ico" />
+  <title>慢慢买-主页</title>
+  <link rel="stylesheet" type="text/css" href="lib/mui/css/mui.min.css">
+  <link rel="stylesheet" type="text/css" href="lib/fontAwesome/css/font-awesome.min.css">
+  <link rel="stylesheet/less" href="less/sitenav.less">
+  <script src="lib/less/less.js"></script>
+</head>
+
+<body>
+  <!-- 头部 -->
+  <header id="header" class="header">
+    <div class="icon-back"><a href="index.html">&lt;</a> </div>
+    <div class="header-text"> <span>商城导航</span> </div>
+    <div class="appdown"><a href="#"><img src="images/header_app.png" alt="手机app下载"></a></div>
+  </header>
+
+
+  <!-- 主体部分 -->
+  <main id="main"> 
+      <div class="mui-scroll-wrapper">
+          <div class="mui-scroll">
+            <!--这里放置真实显示的DOM内容-->
+            <div class="link">
+                <a href="http://union.click.jd.com/jdc?e=&amp;p=AiIBZRprFDJWWA1FBCVbV0IUEEULXg1cAAQJS14M…xkSUGZZHkcCaUJQWiUXVyUDIgRUHF8XCxUDVytrc38i&amp;t=W1dCFBBFC14NXAAECUteDA%3D%3D">
+                  <img src="http://misc.manmanbuy.com/images/hzweb/360.png" alt="">
+                  <span>京东商城</span>
+              </a>
+              <a href="http://m.dangdang.com/touch/?unionid=P-326968m">
+                <img src="http://misc.manmanbuy.com/images/hzweb/dangdang.png" alt="">
+                <span>当当</span>
+            </a>
+            <a href="http://www.amazon.cn/">
+              <img src="http://misc.manmanbuy.com/images/hzweb/joyo.png" alt="">
+              <span>中国亚马逊</span>
+          </a>
+          <a href="http://sucs.suning.com/visitor.htm?userId=2465&amp;webSiteId=0&amp;adInfoId=0&amp;adBookId=0&amp;channel=14&amp;vistURL=http://m.suning.com">
+            <img src="http://cuimg.zuyushop.com/newindexpic/mall/suningsmall.gif" alt="">
+            <span>苏宁易购</span>
+        </a>
+             </div>
+          </div>
+        </div>
+   
+ </main>
+
+
+ <!--商品导航功能界面的模板 -->
+ <script id="getsitenaTpl" type="text/html">
+  {{each result value}}
+  <a href="{{value.navHref}}">
+    <img src= "{{value.navImg}}">
+    <span>{{value.navTitle}}</span>
+   </a>
+
+{{ /each }}
+
+ </script>
+
+
+
+
+  <!-- 页脚 -->
+  <footer id="footer">
+    <div class="brand">
+      <a  href="index.html">首页 > 商城导航</a>
+    </div>
+    <div class="toolBar">
+      <a href="login.html">登录</a>
+      <a href="register.html">注册</a>
+      <a href="#" class="top"><img src="images/top.jpg" alt="">返回顶部</a>
+    </div>
+    <div class="siteInfo">
+      <p><a href="#" class="download">手机app下载</a><span>慢慢买手机版--掌上比价平台</span></p>
+      <p>m.manmanbuy.com</p>
+
+    </div>
+  </footer>
+  <!-- 引入js -->
+  <script src="lib/mui/js/mui.js"></script>
+  <script src="lib/zepto/zepto.min.js"></script>
+  <script src="lib/artTemplate/template-web.js"></script>
+  <script src="js/sitenav.js"></script>
+</body>
+
+</html>
